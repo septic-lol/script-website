@@ -1,49 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>bxillee Scripts</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bxillee Scripts</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
+  <div class="container">
     <h1>bxillee Scripts</h1>
-    <p>High quality Roblox scripts</p>
     <a class="discord" href="https://discord.gg/UcbDRx39cB" target="_blank">
-        Join Discord
+      Join Discord
     </a>
+  </div>
 </header>
 
-<main>
-    <div class="card">
-        <h2>Skeleton ESP + No Spread</h2>
-        <p>
-            Clean skeleton ESP with crouch detection, team check,
-            and no-spread support.
-        </p>
-        <a class="download" href="scripts/esp.lua" download>
-            Download Script
-        </a>
-    </div>
+<main class="container">
 
-    <div class="card">
-        <h2>Money Farm</h2>
-        <p>
-            Automatic money farming script with safe execution.
-        </p>
-        <a class="download" href="scripts/moneyfarm.lua" download>
-            Download Script
-        </a>
+  <!-- SCRIPT CARD TEMPLATE -->
+  <div class="card">
+    <h2>Skeleton ESP + No Spread</h2>
+    <p class="short-desc">Clean skeleton ESP with crouch detection, team check, and no-spread support.</p>
+    
+    <button class="learn-more">Learn More</button>
+    
+    <div class="full-desc hidden">
+      <p>
+        This script provides full skeleton ESP with crouch detection and team check. 
+        You can toggle skeleton thickness, skeleton color, crouch color, and enable/disable no-spread. 
+        Works on R6 and R15 rigs. Fully UI controlled using BlekLib.
+      </p>
     </div>
+    
+    <div class="actions hidden">
+      <button class="copy-btn" data-loadstring='loadstring(game:HttpGet("https://raw.githubusercontent.com/septic-lol/Fight-to-steal-money/refs/heads/main/Main.lua"))()'>Copy Loadstring</button>
+      <a class="download" href="scripts/esp.lua" download>Download Script</a>
+    </div>
+  </div>
 
-    <!-- ADD MORE SCRIPTS HERE -->
+  <div class="card">
+    <h2>Money Farm</h2>
+    <p class="short-desc">Automatic money farming script.</p>
+    
+    <button class="learn-more">Learn More</button>
+    
+    <div class="full-desc hidden">
+      <p>
+        Automatically gain in-game currency using safe remote calls. 
+        Fully toggleable and controlled via UI.
+      </p>
+    </div>
+    
+    <div class="actions hidden">
+      <button class="copy-btn" data-loadstring='loadstring(game:HttpGet("https://gist.githubusercontent.com/spaying/adf7085b310641e43225829e25ce3e2c/raw/8f157f1fb22e69ecaf583f6bfe93879ae91a18ae/counterblox.lua"))()'>Copy Loadstring</button>
+      <a class="download" href="scripts/moneyfarm.lua" download>Download Script</a>
+    </div>
+  </div>
+
 </main>
 
 <footer>
+  <div class="container">
     <p>© 2026 bxillee — All rights reserved</p>
+  </div>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
